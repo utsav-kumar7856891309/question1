@@ -1,0 +1,88 @@
+1️⃣ Classify the types of data exposed (PII or not)
+✅ PII (Personally Identifiable Information):
+
+Passwords (linked to user accounts → PII)
+
+Messages (often contain personal details, relationships, etc.)
+
+Location histories (directly tied to user identity and movements)
+
+Any profile details (name, email, phone number) that accompany these
+
+Under most data protection laws (e.g., GDPR, India’s DPDP Act), all of these qualify as PII because they can directly or indirectly identify an individual.
+
+✅ Non-PII
+
+If any leaked data was completely anonymized and stripped of identifiers (e.g., aggregated statistics), that would be non-PII.
+
+In this case, since the data is tied to user accounts, almost everything is PII.
+
+So to sum up:
+
+Passwords, messages, and location histories are all PII because they can identify a user or their personal behavior.
+
+2️⃣ What were likely technical and human errors that caused the breach?
+Let’s consider what commonly goes wrong in such breaches:
+
+✅ Likely Technical Failures:
+
+Poor password hashing (e.g., storing passwords in plain text or using weak hashing algorithms)
+
+Unpatched vulnerabilities (e.g., web application flaws like SQL injection, XSS)
+
+Lack of encryption of sensitive data at rest or in transit
+
+Insufficient network segmentation, allowing attackers to pivot between systems
+
+Misconfigured cloud storage (e.g., an S3 bucket left open)
+
+Inadequate access controls (overly broad privileges to employees or third-party apps)
+
+✅ Likely Human Failures:
+
+Employees falling for phishing emails (compromised admin credentials)
+
+Weak or reused passwords by developers/admins
+
+Ignoring security alerts from intrusion detection systems
+
+Poor security culture (no regular security awareness training)
+
+Failure to perform regular security audits
+
+In major breaches, it is usually a combination of:
+➡️ technical weakness plus
+➡️ human error
+
+3️⃣ How does this case reflect the broader need for cybersecurity?
+This breach highlights critical lessons for the broader ecosystem:
+
+✅ Data is valuable
+
+Attackers target personal data to sell on the dark web or use it for further attacks (identity theft, financial fraud, etc.)
+
+Social media data is especially sensitive because it shows behavior, relationships, locations, and thoughts
+
+✅ User trust is fragile
+
+Millions of users rely on social platforms to protect their privacy
+
+A breach severely damages public trust and can cause reputational ruin
+
+✅ Cybersecurity is not optional
+
+Companies cannot treat security as an afterthought; it must be a core business function
+
+Regulatory fines for privacy breaches (GDPR, DPDP Act) can be enormous
+
+✅ People are the weakest link
+
+Even the best technical defenses can fail if human security awareness is weak
+
+Cybersecurity culture is as important as cybersecurity technology
+
+✅ Breach impact is global
+
+A social media breach impacts not just one country but users worldwide
+
+This means platforms must think globally in their security posture
