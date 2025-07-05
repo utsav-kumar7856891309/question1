@@ -1,0 +1,136 @@
+1️⃣ What are the cybersecurity principles violated here (CIA Triad)?
+The CIA Triad is the foundation of cybersecurity:
+
+C – Confidentiality
+Protects information from unauthorized access.
+→ Violated because the attackers have gained access to sensitive patient records and could potentially leak them.
+
+I – Integrity
+Protects data from unauthorized modification or destruction.
+→ Violated since ransomware encrypts or alters files, making them unusable and potentially corrupted.
+
+A – Availability
+Ensures authorized users have reliable access to data and systems when needed.
+→ Severely violated because patient records are locked, surgeries are delayed or canceled, risking lives.
+
+In summary:
+All three pillars of the CIA triad were broken:
+
+Confidentiality: patient data exposed to attackers
+
+Integrity: data altered/encrypted
+
+Availability: data and systems unavailable for critical patient care
+
+2️⃣ How could PII and CII be involved in this situation?
+✅ PII (Personally Identifiable Information):
+
+Hospitals store names, addresses, contact details, medical histories, test results, even insurance information.
+
+All of these qualify as PII under privacy laws (e.g., India’s DPDP Act, HIPAA in the US).
+
+If attackers exfiltrate and threaten to leak these records, patient privacy is catastrophically compromised.
+
+✅ CII (Critical Information Infrastructure):
+
+A modern hospital depends on digital systems for:
+
+patient admissions
+
+ICU/OT equipment
+
+pharmacy systems
+
+lab diagnostics
+
+remote consultations
+
+These systems are vital to public health and safety. Their disruption could endanger lives, making them part of Critical Information Infrastructure under Section 70 of the IT Act.
+
+Hence:
+👉 PII is impacted through patient data compromise
+👉 CII is impacted through loss of essential healthcare services
+
+3️⃣ Propose a cybersecurity framework the hospital should adopt going forward
+A hospital needs a structured cybersecurity framework with a holistic approach. A well-suited framework would include:
+
+✅ NIST Cybersecurity Framework (CSF)
+This is globally recognized and practical, with five pillars:
+
+1️⃣ Identify
+
+Maintain a full asset inventory (devices, servers, medical equipment)
+
+Identify critical processes (e.g., ICU systems, EMR — electronic medical records)
+
+Perform regular risk assessments
+
+2️⃣ Protect
+
+Enforce strong access controls and multi-factor authentication
+
+Network segmentation (separate hospital admin systems from medical devices)
+
+Employee awareness and phishing training
+
+Robust backup strategy (offline/immutable backups)
+
+3️⃣ Detect
+
+Security Information and Event Management (SIEM) to detect suspicious activity
+
+Endpoint detection and response (EDR) on all devices
+
+Intrusion detection systems (IDS)
+
+24x7 monitoring, possibly with a Security Operations Center (SOC)
+
+4️⃣ Respond
+
+A well-tested incident response plan
+
+Pre-defined ransomware playbooks
+
+Coordination with national cyber agencies (like CERT-In in India)
+
+Ensure legal, regulatory, and media communication plans are in place
+
+5️⃣ Recover
+
+Well-defined data recovery procedures
+
+Periodic drills to test data restoration
+
+Post-incident reviews to learn and improve
+
+Other important additions:
+
+✅ Zero-Trust Architecture
+
+Always verify identity
+
+Least privilege for every user
+
+Micro-segmentation of the network
+
+✅ Regular vulnerability assessments & penetration testing
+
+Hospitals often have outdated medical devices — they need to be continuously tested.
+
+✅ Data encryption
+
+Encrypt data at rest and in transit
+
+So even if stolen, it remains unreadable
+
+✅ Third-party risk management
+
+Many hospitals work with outsourced labs, insurance partners — all should follow robust security practices.
+
+✅ Comply with applicable laws
+
+In India, Digital Personal Data Protection (DPDP) Act
+
+In the US, HIPAA
+
+Ensure the hospital’s policies match these legal requirements
